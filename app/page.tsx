@@ -1,3 +1,4 @@
+// Строки 1-9: ИЗМЕНИТЕ ВСЕ импорты
 import Header from '../components/landing/header';
 import Hero from '../components/landing/hero';
 import Videos from '../components/landing/videos';
