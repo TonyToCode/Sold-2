@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { artistData } from "@/app/data";
-import { Button } from "@/components/ui/button";
+import { cn } from "../../lib/utils";
+import { artistData } from "../../data";
+import { Button } from "../ui/button";
 import {
   Sheet,
   SheetContent,
