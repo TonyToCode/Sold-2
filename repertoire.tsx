@@ -22,7 +22,7 @@ import {
   SheetClose,
   SheetFooter
 } from "@/components/ui/sheet";
-import ContactForm from "./contact-form";
+import ContactForm from "@/components/contact-form";
 
 type Song = {
   title: string;

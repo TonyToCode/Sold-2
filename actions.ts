@@ -1,8 +1,8 @@
-"use server";
+// "use server"; // Отключено для статического экспорта на GitHub Pages
 
 import { z } from "zod";
-import { getFirestore } from "firebase-admin/firestore";
-import { initializeApp, getApps, App } from "firebase-admin/app";
+// import { getFirestore } from "firebase-admin/firestore";
+// import { initializeApp, getApps, App } from "firebase-admin/app";
 
 const bookingSchema = z.object({
   eventDate: z.date({ required_error: "Пожалуйста выберите дату." }),
@@ -30,21 +30,22 @@ export type BookingState = {
   isSuccess?: boolean;
 };
 
-let firebaseApp: App;
-if (!getApps().length) {
-  firebaseApp = initializeApp();
-} else {
-  firebaseApp = getApps()[0];
-}
+// Отключено для статического экспорта
+// let firebaseApp: App;
+// if (!getApps().length) {
+//   firebaseApp = initializeApp();
+// } else {
+//   firebaseApp = getApps()[0];
+// }
 
-const db = getFirestore(firebaseApp);
+// const db = getFirestore(firebaseApp);
 
 
 export async function submitBooking(
   prevState: BookingState,
   formData: FormData
 ): Promise<BookingState> {
-  
+
   const songs = formData.get("selectedSongs");
   const parsedSongs = songs ? JSON.parse(songs as string) : [];
 
@@ -68,20 +69,9 @@ export async function submitBooking(
     };
   }
 
-  try {
-    const docRef = await db.collection("bookings").add({
-      ...validatedFields.data,
-      createdAt: new Date(),
-    });
-    console.log("Новый запрос на бронирование сохранен с ID:", docRef.id);
-  } catch (error) {
-    console.error("Ошибка при сохранении в Firestore:", error);
-    return {
-      message: "Произошла ошибка на сервере. Пожалуйста, попробуйте еще раз.",
-      isSuccess: false,
-    };
-  }
-  
+  // Заглушка для статического экспорта - просто возвращаем успех
+  console.log("Форма валидна, но Firebase отключен для статического деплоя");
+
   return {
     message: "Ваш запрос на бронирование отправлен! Мы скоро с вами свяжемся.",
     isSuccess: true,

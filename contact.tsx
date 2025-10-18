@@ -13,7 +13,7 @@ import {
   HeartPulse,
   Smile
 } from "lucide-react";
-import ContactForm from "./contact-form";
+import ContactForm from "@/components/contact-form";
 
 const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg

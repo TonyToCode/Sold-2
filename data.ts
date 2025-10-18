@@ -37,8 +37,8 @@ export const artistData = {
     {...getImage('logo8'), name: 'Ozon'},
   ],
   VIDEOS: [
-    { ...getImage('video1'), title: 'Сольное выступление на Самуи', description: 'Полная отдача и невероятная энергетика', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
-    { ...getImage('video2'), title: 'Выступление на свадьбе', description: 'Создание волшебной атмосферы для особенного дня', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
+    { ...getImage('video1'), title: 'Сольное выступление на Самуи', description: 'Полная отдача и невероятная энергетика', videoUrl: 'https://www.youtube.com/watch?v=dzTZzc8nUGM' },
+    { ...getImage('video2'), title: 'Выступление на свадьбе', description: 'Создание волшебной атмосферы для особенного дня', videoUrl: 'https://www.youtube.com/watch?v=l7l4NmbALug' },
     { ...getImage('video3'), title: 'Клип собственного трека', description: 'Творчество и душа в каждой ноте', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
   ],
   QUOTES: [
