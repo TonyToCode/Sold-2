@@ -40,8 +40,8 @@ const nextConfig: NextConfig = {
   output: 'export', // Включаем статический экспорт
   trailingSlash: true, // Добавляем слеш в конце путей
   distDir: 'out', // Папка для сборки (стандарт для GitHub Pages)
-  basePath: process.env.NODE_ENV === 'production' ? '/Sold-2' : '', // Base path для нового репозитория
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Sold-2/' : '', // Asset prefix для ресурсов
+  basePath: '', // Убираем для root деплоя
+  assetPrefix: '', // Убираем для root деплоя
 };
 
 export default nextConfig;
