@@ -1,5 +1,5 @@
-import type { ImagePlaceholder } from '@/lib/placeholder-images';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import type { ImagePlaceholder } from './lib/placeholder-images';
+import { PlaceHolderImages } from './lib/placeholder-images';
 
 export const getImage = (id: string): ImagePlaceholder => {
   const image = PlaceHolderImages.find((img) => img.id === id);

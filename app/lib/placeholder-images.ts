@@ -9,7 +9,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   {
     id: 'artist-logo',
     description: 'Логотип артиста Sold',
-    imageUrl: '/photo_2024-12-31_19-23-46.jpg',
+    imageUrl: 'https://picsum.photos/seed/artist-logo/150/150',
     imageHint: 'logo'
   },
   {
@@ -63,19 +63,19 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   {
     id: 'video1',
     description: 'Видео 1 - Сольное выступление',
-    imageUrl: '/photo_2024-03-09_19-22-26.jpg',
+    imageUrl: 'https://picsum.photos/seed/video1/600/400',
     imageHint: 'video'
   },
   {
     id: 'video2',
     description: 'Видео 2 - Свадьба',
-    imageUrl: '/photo_2024-06-24_18-00-20.jpg',
+    imageUrl: 'https://picsum.photos/seed/video2/600/400',
     imageHint: 'video'
   },
   {
     id: 'video3',
     description: 'Видео 3 - Клип',
-    imageUrl: '/photo_2024-07-17_03-38-09.jpg',
+    imageUrl: 'https://picsum.photos/seed/video3/600/400',
     imageHint: 'video'
   },
   {
