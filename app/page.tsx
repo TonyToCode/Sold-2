@@ -1,12 +1,11 @@
-// Строки 1-9: ИЗМЕНИТЕ ВСЕ импорты
-import Header from '../components/landing/header';
-import Hero from '../components/landing/hero';
-import Videos from '../components/landing/videos';
-import SocialProof from '../components/landing/social-proof';
-import Organizer from '../components/landing/organizer';
-import Repertoire from '../components/landing/repertoire';
-import Contact from '../components/landing/contact';
-import Footer from '../components/landing/footer';
+import Header from './components/landing/header';
+import Hero from './components/landing/hero';
+import Videos from './components/landing/videos';
+import SocialProof from './components/landing/social-proof';
+import Organizer from './components/landing/organizer';
+import Repertoire from './components/landing/repertoire';
+import Contact from './components/landing/contact';
+import Footer from './components/landing/footer';
 
 export default function Home() {
   return (
